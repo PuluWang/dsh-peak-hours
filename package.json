@@ -1,0 +1,39 @@
+{
+  "name": "dsh-peak-hours",
+  "version": "1.4.0",
+  "description": "DeepSeek Harness plugin: warns when the current time is in the peak billing window, where cost is 2x the off-peak rate.",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "install-windows.ps1",
+    "install-macos.sh",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web"
+    }
+  },
+  "keywords": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "billing",
+    "reminder"
+  ],
+  "author": "SHANGHAI PULU NETWORK TECHNOLOGY CORPORATION LIMITED",
+  "license": "MIT"
+}

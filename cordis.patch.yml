@@ -1,0 +1,6 @@
+# dsh-peak-hours bundle patch.
+# One host row named after the package; the dsh.client-modules half scans this
+# enabled row and serves ./client.js to the browser roster.
+- insert:
+    - id: dsh-peak-hours
+      name: dsh-peak-hours
